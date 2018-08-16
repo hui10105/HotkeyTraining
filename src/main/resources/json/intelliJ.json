@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "查找",
+    "description": "在当前文件进行文本查找 （必备）。",
+    "hotkey": "CONTROL + F"
+  },
+  {
+    "id": 2,
+    "name": "替换",
+    "description": "在当前文件进行文本替换 （必备）。",
+    "hotkey": "CONTROL + R"
+  },
+  {
+    "id": 3,
+    "name": "撤销",
+    "description": "撤销 （必备）。",
+    "hotkey": "CONTROL + Z"
+  },
+  {
+    "id": 4,
+    "name": "删除",
+    "description": "删除光标所在行 或 删除选中的行 （必备）。",
+    "hotkey": "CONTROL + Y"
+  },
+  {
+    "id": 5,
+    "name": "剪切",
+    "description": "剪切光标所在行 或 剪切选择内容。",
+    "hotkey": "CONTROL + X"
+  },
+  {
+    "id": 6,
+    "name": "复制",
+    "description": "复制光标所在行 或 复制选择内容。",
+    "hotkey": "CONTROL + C"
+  },
+  {
+    "id": 7,
+    "name": "复制并插入",
+    "description": "复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备）。",
+    "hotkey": "CONTROL + D"
+  },
+  {
+    "id": 8,
+    "name": "递进式选择",
+    "description": "递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备）。",
+    "hotkey": "CONTROL + W"
+  },
+  {
+    "id": 8,
+    "name": "显示最近打开",
+    "description": "显示最近打开的文件记录列表 （必备）。",
+    "hotkey": "CONTROL + E"
+  },
+  {
+    "id": 9,
+    "name": "查找类文件",
+    "description": "根据输入的 类名 查找类文件 （必备）。",
+    "hotkey": "CONTROL + N"
+  },
+  {
+    "id": 10,
+    "name": "跳转到指定行",
+    "description": "在当前文件跳转到指定行处。",
+    "hotkey": "CONTROL + G"
+  },
+  {
+    "id": 11,
+    "name": "复制",
+    "description": "插入自定义动态代码模板 （必备）。",
+    "hotkey": "CONTROL + J"
+  },
+  {
+    "id": 12,
+    "name": "参数提示",
+    "description": "方法参数提示显示 （必备）。",
+    "hotkey": "CONTROL + P"
+  },
+  {
+    "id": 13,
+    "name": "显示文档",
+    "description": "光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容。",
+    "hotkey": "CONTROL + Q"
+  },
+  {
+    "id": 14,
+    "name": "前往父类方法",
+    "description": "前往当前光标所在的方法的父类的方法 / 接口定义 （必备）。",
+    "hotkey": "CONTROL + U"
+  },
+  {
+    "id": 15,
+    "name": "前往定义处",
+    "description": "进入光标所在的方法/变量的接口或是定义处，等效于 Ctrl + 左键单击 （必备）。",
+    "hotkey": "CONTROL + B"
+  },
+  {
+    "id": 16,
+    "name": "版本提交",
+    "description": "版本控制提交项目，需要此项目有加入到版本控制才可用。",
+    "hotkey": "CONTROL + K"
+  },
+  {
+    "id": 17,
+    "name": "版本更新",
+    "description": "版本控制更新项目，需要此项目有加入到版本控制才可用。",
+    "hotkey": "CONTROL + T"
+  },
+  {
+    "id": 18,
+    "name": "类结构",
+    "description": "显示当前类的层次结构。",
+    "hotkey": "CONTROL + H"
+  },
+  {
+    "id": 19,
+    "name": "选择可重写方法",
+    "description": "选择可重写的方法。",
+    "hotkey": "CONTROL + O"
+  },
+  {
+    "id": 20,
+    "name": "选择可继承方法",
+    "description": "选择可继承的方法。",
+    "hotkey": "CONTROL + I"
+  },
+  {
+    "id": 21,
+    "name": "展开代码",
+    "description": "展开代码。",
+    "hotkey": "CONTROL + +"
+  },
+  {
+    "id": 22,
+    "name": "折叠代码",
+    "description": "折叠代码。",
+    "hotkey": "CONTROL + -"
+  },
+  {
+    "id": 23,
+    "name": "注释行",
+    "description": "注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 （必备）。",
+    "hotkey": "CONTROL + SLASH"
+  },
+  {
+    "id": 24,
+    "name": "移动到花括号开始位置",
+    "description": "移动光标到当前所在代码的花括号开始位置。",
+    "hotkey": "CONTROL + ["
+  },
+  {
+    "id": 25,
+    "name": "移动到花括号结束位置",
+    "description": "移动光标到当前所在代码的花括号结束位置。",
+    "hotkey": "CONTROL + ]"
+  },
+  {
+    "id": 26,
+    "name": "显示错误信息",
+    "description": "在光标所在的错误代码处显示错误信息 （必备）。",
+    "hotkey": "CONTROL + F1"
+  },
+  {
+    "id": 27,
+    "name": "下一个引用位置",
+    "description": "调转到所选中的词的下一个引用位置 （必备）。",
+    "hotkey": "CONTROL + F3"
+  },
+  {
+    "id": 28,
+    "name": "关闭当前文件",
+    "description": "关闭当前编辑文件。",
+    "hotkey": "CONTROL + F4"
+  },
+  {
+    "id": 29,
+    "name": "设置/取消断点",
+    "description": "在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点。",
+    "hotkey": "CONTROL + F8"
+  },
+  {
+    "id": 30,
+    "name": "Make Project",
+    "description": "执行 Make Project 操作。",
+    "hotkey": "CONTROL + F9"
+  },
+  {
+    "id": 31,
+    "name": "设定 / 取消书签",
+    "description": "选中文件 / 文件夹，使用助记符设定 / 取消书签 （必备）。",
+    "hotkey": "CONTROL + F11"
+  },
+  {
+    "id": 32,
+    "name": "文件结构层",
+    "description": "弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选。",
+    "hotkey": "CONTROL + F12"
+  },
+  {
+    "id": 33,
+    "name": "窗口切换",
+    "description": "编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口。",
+    "hotkey": "CONTROL + TAB"
+  },
+  {
+    "id": 34,
+    "name": "跳到文件尾",
+    "description": "跳到文件尾。",
+    "hotkey": "CONTROL + END"
+  },
+  {
+    "id": 35,
+    "name": "跳到文件头",
+    "description": "跳到文件头。",
+    "hotkey": "CONTROL + HOME"
+  },
+  {
+    "id": 36,
+    "name": "代码补全",
+    "description": "基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl + 逗号 （必备）。",
+    "hotkey": "CONTROL + SPACE"
+  },
+  {
+    "id": 37,
+    "name": "删除光标后单词",
+    "description": "删除光标后面的单词或是中文句 （必备）。",
+    "hotkey": "CONTROL + DELETE"
+  },
+  {
+    "id": 38,
+    "name": "删除光标前单词",
+    "description": "删除光标前面的单词或是中文句 （必备）。",
+    "hotkey": "CONTROL + BACK_SPACE"
+  },
+  {
+    "id": 39,
+    "name": "定位到书签(1)",
+    "description": "定位到对应数值(1)的书签位置 （必备）。",
+    "hotkey": "CONTROL + DIGIT1"
+  },
+  {
+    "id": 40,
+    "name": "光标跳转到左侧",
+    "description": "光标跳转到当前单词 / 中文句的左侧开头位置。",
+    "hotkey": "CONTROL + LEFT"
+  },
+  {
+    "id": 41,
+    "name": "光标跳转到右侧",
+    "description": "光标跳转到当前单词 / 中文句的右侧开头位置 。",
+    "hotkey": "CONTROL + RIGHT"
+  },
+  {
+    "id": 42,
+    "name": "光标跳转到上方",
+    "description": "等效于鼠标滚轮向前效果（必备）。",
+    "hotkey": "CONTROL + UP"
+  },
+  {
+    "id": 43,
+    "name": "光标跳转到下方",
+    "description": "等效于鼠标滚轮向后效果 （必备）。",
+    "hotkey": "CONTROL + DOWN"
+  }
+]

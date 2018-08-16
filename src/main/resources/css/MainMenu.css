@@ -1,0 +1,72 @@
+/*
+How to Deal with the node without margin.
+No, there is no exact equivalent in JavaFX 8 to WPF margin support for all nodes.
+
+A feature request to add node margin support is currently scheduled to be implemented for Java 9.
+    RT-27785 Add "margin" property to node and make it styleable from CSS
+
+Use an absolute positioning layout container such as an AnchorPane.
+Use a GridPane which has margin support.
+Tweak the padding values on your nodes.
+Set spacing for hbox/vbox style controls.
+Using struts as outlined in James Weaver's (somewhat dated and slightly obsolete) document on JavaFX layout.*/
+
+
+.root {
+    /*-fx-background-color: BLACK;*/
+    -fx-background-image: url("pic/background.jpg");
+}
+
+.hBox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-font-size: 28px;
+    /*-fx-padding: 50px;*/
+    /*-fx-border-insets: 50px;*/
+    /*-fx-background-insets: 50px;*/
+}
+
+.vBox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-font-size: 28px;
+}
+
+#buttons {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+/*.text-field{*/
+    /*-fx-font-size: 28px;*/
+/*}*/
+
+/*#hotkeyID {*/
+    /*-fx-font-size: 28px;*/
+    /*!*-fx-font-weight: bold;*!*/
+    /*!*-fx-text-fill: #333333;*!*/
+    /*!*-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);*!*/
+/*}*/
+
+/*#descrip {*/
+    /*-fx-font-size: 28px;*/
+/*}*/
+
+/*#pressedKeys {*/
+    /*-fx-font-size: 28px;*/
+/*}*/
+
+/*#result {*/
+    /*-fx-font-size: 28px;*/
+/*}*/
+
+.button{
+
+}
+
+/*.button{*/
+/*-fx-text-fill: white;*/
+/*-fx-font-family: “Arial Narrow”;*/
+/*-fx-font-weight: bold;*/
+/*-fx-background-color: linear-gradient(#61a2b1, #2A5058);*/
+/*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+/*}*/
