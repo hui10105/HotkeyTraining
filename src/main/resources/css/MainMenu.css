@@ -27,14 +27,15 @@ Using struts as outlined in James Weaver's (somewhat dated and slightly obsolete
 }
 
 .vBox {
-    -fx-alignment: center;
-    -fx-spacing: 20px;
-    -fx-font-size: 28px;
+    /*-fx-alignment: center;*/
+    -fx-spacing: 10px;
+    -fx-font-size: 20px;
 }
 
 #buttons {
-    -fx-alignment: center;
+    -fx-alignment: center-left;
     -fx-spacing: 20px;
+    -fx-font-size: 15px;
 }
 /*.text-field{*/
     /*-fx-font-size: 28px;*/
@@ -60,8 +61,17 @@ Using struts as outlined in James Weaver's (somewhat dated and slightly obsolete
 /*}*/
 
 .button{
-
+    -fx-pref-width: 100;
+    -fx-pref-height: 40;
 }
+
+
+/*#welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-family: “Arial Black”;
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}*/
 
 /*.button{*/
 /*-fx-text-fill: white;*/

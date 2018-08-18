@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,43 +10,51 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPressedAction" onKeyReleased="#handleKeyReleasedAction" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rhzhou.controller.MainMenuController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPressedAction" onKeyReleased="#handleKeyReleasedAction" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rhzhou.controller.MainMenuController">
     <stylesheets>
         <URL value="@../css/MainMenu.css" />
     </stylesheets>
    <bottom>
-      <HBox id="hBox" prefHeight="100.0" prefWidth="200.0" styleClass="hBox" BorderPane.alignment="CENTER">
+      <HBox id="hBox" prefHeight="80.0" prefWidth="1000.0" styleClass="hBox" BorderPane.alignment="CENTER">
          <children>
             <Text fx:id="pressedKeys" strokeType="OUTSIDE" strokeWidth="0.0" text="pressedKeys" />
             <Text fx:id="result" strokeType="OUTSIDE" strokeWidth="0.0" text="结果" />
+            <ImageView fx:id="resultIcon" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </HBox>
    </bottom>
-   <right>
-      <VBox id="buttons" prefHeight="200.0" prefWidth="120.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="选择软件" />
-            <Button mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="40.0" prefWidth="100.0" text="下一个" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="查看全部" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="添加快捷键" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="编辑快捷键" />
-         </children>
-      </VBox>
-   </right>
    <center>
       <ImageView fitHeight="800.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../pic/search.png" />
          </image>
+         <BorderPane.margin>
+            <Insets left="25.0" />
+         </BorderPane.margin>
       </ImageView>
    </center>
    <top>
       <VBox prefHeight="100.0" prefWidth="200.0" styleClass="vBox" BorderPane.alignment="CENTER">
          <children>
-            <Text fx:id="hotkeyID" strokeType="OUTSIDE" strokeWidth="0.0" text="ID"/>
+            <HBox id="buttons" minHeight="80.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="选择软件" />
+                  <Button mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="40.0" prefWidth="100.0" text="下一个" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="查看全部" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="添加快捷键" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="编辑快捷键" />
+               </children>
+            </HBox>
+            <Text fx:id="hotkeyID" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Text>
             <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
-            <Text fx:id="descrip" strokeType="OUTSIDE" strokeWidth="0.0" text="快捷键描述" />
+            <Text fx:id="descrip" strokeType="OUTSIDE" strokeWidth="0.0" text="快捷键描述" wrappingWidth="800.0" />
          </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
       </VBox>
    </top>
 </BorderPane>
